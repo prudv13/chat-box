@@ -1,0 +1,68 @@
+.form-container{
+    background-image: linear-gradient(109.6deg, rgba(26, 22, 14, 0.4), rgba(43, 35, 17, 0.4)), url("./assets/login-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .form-wrapper {
+        background-color: #ffffff;
+        background-image: linear-gradient(-225deg, rgba(100, 90, 75, 0.144), rgba(186, 168, 142, 0.089)), url("https://transparenttextures.com/patterns/cubes.png");
+        box-shadow: 0px 0px 39px 11px rgba(0, 0, 0, 0.464),0px 10px 15px -3px rgba(0,0,0,0.1);
+        padding: 20px 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        .logo {
+            max-width: 200px;
+            max-height: 80px;
+            margin-bottom: 20px;
+        }
+        .title {
+            color: #8D7B68;
+            font-size: 14px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            input {
+                padding: 15px;
+                border: none;
+                border-bottom:1px solid #A4907C;
+                background-color: #ffffff52;
+            &::placeholder {
+                color: #A4907C;
+            }
+            }
+            button {
+                background-color: #8D7B68;
+                color: #ffffff;
+                padding: 10px;
+                font-weight: bold;
+                border: none;
+                cursor: pointer;
+            }
+            label {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: #8D7B68;
+                font-size: 12px;
+                cursor: pointer;
+                img {
+                    height: 35px;
+                }
+            }
+        }
+        p {
+            color: #8D7B68;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+    }
+}
