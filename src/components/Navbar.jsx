@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import ChatBox from '../assets/chatbox-logo.png';
-import UserAvatar from '../assets/user1.png';
 import { signOut } from 'firebase/auth';
 import { auth } from '../firebase/firebase';
 import { AuthContext } from '../context/AuthContext';

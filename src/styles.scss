@@ -87,25 +87,19 @@
 }
 
 .home {
-    background-image: linear-gradient(109.6deg, rgba(26, 22, 14, 0.8), rgba(43, 35, 17, 0.76)), url("./assets/login-bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-y: hidden;
 
     .container {
-        border: 1px solid white;
-        border-radius: 10px;
-        width: 65%;
-        height: 80%;
+        // border: 1px solid white;
+        // border-radius: 10px;
+        width: 100%;
+        height: 100%;
         display: flex;
         overflow: hidden;
-        @include tablet{
-            width: 90%;
-        }
 
         .sidebar {
             flex: 1;
@@ -118,11 +112,11 @@
                 background-image: linear-gradient(-225deg, rgba(100, 90, 75, 0.144), rgba(186, 168, 142, 0.089)), url("https://transparenttextures.com/patterns/cubes.png");
                 display: flex;
                 align-items: center;
-                height: 50px;
+                height: 60px;
                 padding: 10px;
                 justify-content: space-between;
                 .logo {
-                    max-width: 80px;
+                    max-width: 120px;
                     @include tablet{
                         position: absolute;
                         bottom: 10px;
@@ -133,17 +127,17 @@
                     align-items: center;
                     gap: 10px;
                     img {
-                        height: 24px;
-                        width: 24px;
+                        height: 35px;
+                        width: 35px;
                         border-radius: 50%;
                         object-fit: cover;
                     }
                     button {
                         background-color: #6e5942;
                         color: #fff;
-                        font-size: 10px;
+                        font-size: 12px;
                         border: none;
-                        padding: 5px;
+                        padding: 5px 10px;
                         cursor: pointer;
                         @include tablet{
                             position: absolute;
@@ -174,7 +168,7 @@
                 display: flex;
                 align-items: center;
                 gap: 10px;
-                color: #eeeeee;
+                color: #33281c;
                 cursor: pointer;
                 &:hover {
                     background-color: #866f56b4;
@@ -191,7 +185,7 @@
                     }
                     p {
                         font-size: 14px;
-                        color: #cacaca;
+                        color: #e6ddd3e0;
                     }
                 }
             }
@@ -236,9 +230,14 @@
                     color: #8D7B68;
                     font-weight: 300;
                     img{
-                        width: 40px;
+                        width: 50px;
                         border-radius: 50%;
                         object-fit: cover;
+                    }
+                    span{
+                        margin-top: 4px;
+                        font-size: 10px;
+                        color: #a8998b;
                     }
                 }
 
@@ -259,6 +258,11 @@
                         border-radius: 50%;
                         object-fit: cover;
                     }
+                    .imges-sent{
+                        width: 50%;
+                        border-radius: 0px 10px 10px 10px;
+                        object-fit: cover;
+                    }
                 }
                 &.owner {
                     flex-direction: row-reverse;
@@ -270,6 +274,12 @@
                         color: #fff;
                         border-radius: 10px 0 10px 10px;
                     }
+                    .imges-sent{
+                        width: 70%;
+                        border-radius: 10px 0 10px 10px;
+                        object-fit: cover;
+                    }
+
                 }
             }
             
@@ -297,6 +307,10 @@
                 display: flex;
                 align-items: center;
                 gap: 10px;
+                label {
+                    display: flex;
+                    gap: 5px;
+                }
                 .input-icons{
                     color: #6e5942;
                     height: 20px;
